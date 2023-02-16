@@ -130,7 +130,21 @@ This course uses [Visual Studio Code][vscode] as the primary code editor since i
 
 Go to the [Visual Studio Code][vscode] website. The web page should detect you are browsing on a Linux platform and offer you the choice between an RPM (RedHat family) or DEB package (Debian family). Since Linux Mint is part of the Debian family, choose to download the Deb package.
 
+Once the Visual Studio Code DEB package is downloaded, open or Show in Folder. With the folder open, right-click on the package and choose to install with the Package installer - which should be the defualt action. When that opens, click the green "Install Package" button.
 
+Package Installer will ask you to authenticate - just provide your user's password - this will require __sudo__ access.
+
+Once the package is installed, close the Package Installer. At this point Visual Studio Code should be installed.
+
+At this point, I recommend adding it as a favorite, to the panel and possibly to the Desktop for easy access. I also recommend opening up your terminal application and confirming the `code` command is available.
+
+```bash
+which code
+code --version
+code .
+```
+
+Upon opening VSCode, you may want to adjust the size of the interface for better readability - I'm doing to do this so code shows up better throughout the course.
 
 
 

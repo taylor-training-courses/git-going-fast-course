@@ -35,7 +35,7 @@ cd ~
 curl -o .git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 ```
 
-Append the contents of [./bash-snip.sh] into your __.bashrc__ file:
+Append the contents of this into your __.bashrc__ file (Linux Mint uses Bash as the default user shell):
 
 ```bash
 if [ -f ~/.git-prompt.sh ]; then
@@ -46,7 +46,7 @@ else
 fi
 ```
 
-Make sure no lines wrap.
+Make sure no lines wrap. If you use a different shell, make adjustments accordingly.
 
 ## Configration
 

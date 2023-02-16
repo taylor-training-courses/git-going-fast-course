@@ -109,7 +109,7 @@ git config --global push.default simple
 
 Git still uses "master" as the default branch name if one isn't provided, but (nearly) all Git hosting providers have adopted "main" as the default - including GitHub. I recommend changing the default locally to "main" as the default is likely to change anyway.
 
-__Main Deafult Branch__:
+__Main Default Branch__:
 
 ```bash
 # Set default branch

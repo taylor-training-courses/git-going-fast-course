@@ -146,6 +146,9 @@ code .
 
 Upon opening VSCode, you may want to adjust the size of the interface for better readability - I'm doing to do this so code shows up better throughout the course.
 
+## Conclusion
+
+These are all the tools needed for the Git Going Fast course.
 
 
 

@@ -11,9 +11,7 @@ __Apt / Aptitude__:
 This is better for interactive terminal sessions.
 
 ```bash
-sudo apt install -y git
-# - or -
-# sudo apt-get install git
+sudo apt install git
 ```
 
 or
@@ -23,8 +21,10 @@ __Apt-Get__:
 This is better for automation scripts.
 
 ```bash
-sudo apt-get install git
+sudo apt-get install -y git
 ```
+
+Note: The __-y__ option is to auto accept at the prompt.
 
 ## Git Prompt
 

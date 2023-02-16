@@ -2,6 +2,23 @@
 
 Instructions are provided for those that prefer to do this themselves.
 
+> Note: A user with __sudo__ is required for these instructions.
+
+### Tested Versions
+
+* Linux Mint 21.1
+
+Should work with all recent versions of Linux Mint.
+
+### Update Apt
+
+Let's make sure all existing packages are already updated.
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
 ## Git Install
 
 Pick one of the following:
@@ -48,7 +65,7 @@ fi
 
 Make sure no lines wrap. If you use a different shell, make adjustments accordingly.
 
-## Configration
+## Configuration
 
 Git requires a bit of configuration before allowing us to do very much with it.
 
@@ -107,7 +124,7 @@ git config --global push.default simple
 
 ### Default Branch Name
 
-Git still uses "master" as the default branch name if one isn't provided, but (nearly) all Git hosting providers have adopted "main" as the default - including GitHub. I recommend changing the default locally to "main" as the default is likely to change anyway.
+Git still uses "master" as the default branch name if one isn't provided, but (nearly) all Git hosting providers have adopted "main" as the default - including GitHub. I recommend changing the default locally to "main" as the default is likely to change soon anyway.
 
 __Main Default Branch__:
 
@@ -115,3 +132,16 @@ __Main Default Branch__:
 # Set default branch
 git config --global init.defaultBranch main
 ```
+
+## Visual Studio Code
+
+This course uses [Visual Studio Code][vscode] as the primary code editor since it is cross-platform and available on all operating systems supported by this course.
+
+Go to the [Visual Studio Code][vscode] website. The web page should detect you are browsing on a Linux platform and offer you the choice between an RPM (RedHat family) or DEB package (Debian family). Since Linux Mint is part of the Debian family, choose to download the Deb package.
+
+
+
+
+
+
+[vscode]: https://code.visualstudio.com/ "A code editor from Microsoft that doesn't suck"

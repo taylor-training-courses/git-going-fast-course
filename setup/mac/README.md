@@ -88,7 +88,7 @@ export PATH=/opt/homebrew/bin:$PATH
 Of course, adjust if you are using Bash or another shell. Also, keep the Homebrew path ahead of all other paths so anything installed here will take priority.
 
 
-## Git Installation
+## Installing Git
 
 Overview:
 
@@ -164,7 +164,7 @@ The first three lines are very option and can be excluded if preferred. The __al
 
 Make sure no lines wrap. If you use a different shell, make adjustments accordingly.
 
-## Configration
+## Configuration
 
 Git requires a bit of configuration before allowing us to do very much with it.
 
@@ -234,6 +234,6 @@ For some reason, Git on MacOS may use a pager (helper program) even when a pager
 __Fix the Pager__:
 
 ```bash
-# Set default branch
+# fix the pager
 git config --global core.pager "less -X -F"
 ```

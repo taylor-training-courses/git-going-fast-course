@@ -2,10 +2,26 @@
 
 ## Git Install
 
+Pick one of the following:
+
+__Apt / Aptitude__:
+
+This is better for interactive terminal sessions.
+
 ```bash
 sudo apt install -y git
 # - or -
 # sudo apt-get install git
+```
+
+or
+
+__Apt-Get__:
+
+This is better for automation scripts.
+
+```bash
+sudo apt-get install git
 ```
 
 ## Git Prompt
@@ -32,6 +48,8 @@ Make sure no lines wrap.
 
 ## Configration
 
+Git requires a bit of configuration before allowing us to do very much with it.
+
 ### Minimal Settings
 
 Set the Git user's name and email - this will be included with every commit (change) made by you.
@@ -45,7 +63,7 @@ git config --global user.email "your.name@domain.com"
 
 ### Default Text Editor with Git
 
-Set the core editor (used to edit commit messages, edit git config, etc). Your editor must already exist and the editor command needs to be accessible on the system path. Choose one of the following:
+Set the core editor (used to edit commit messages, edit git config, etc). Your editor must already exist and the editor command needs to be accessible on the system path. Choose one of the following. This course uses Visual Studio Code.
 
 __Nano__:
 
@@ -81,7 +99,7 @@ The old default was to push all changes on all branches. The new default (2.x) i
 __Simple Pushing__:
 
 ```bash
-# VSCode as default editor with Git
+# Use "simple" behavior for pushing
 git config --global push.default simple
 ```
 

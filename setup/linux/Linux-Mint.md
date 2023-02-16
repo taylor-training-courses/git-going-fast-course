@@ -93,15 +93,6 @@ Simple terminal-based editor that comes Ubuntu/Linux Mint. Great option if prefe
 git config --global core.editor nano
 ```
 
-__Atom__:
-
-Personal favorite, but now deprecated as it is being abandoned by Microsoft in favor of VSCode.
-
-```bash
-# Atom as default editor with Git
-git config --global core.editor "atom --wait"
-```
-
 __Visual Studio Code__:
 
 Used with Git Going Fast course.

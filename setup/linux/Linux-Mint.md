@@ -1,5 +1,7 @@
 # Git Installation and Setup on Linux Mint
 
+Instructions are provided for those that prefer to do this themselves.
+
 ## Git Install
 
 Pick one of the following:

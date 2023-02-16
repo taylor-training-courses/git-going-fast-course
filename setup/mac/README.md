@@ -5,13 +5,13 @@ Instructions are provided for those that prefer to do this themselves. As of 202
 ## Requirements
 
 * Use the Terminal App (Applications > Utilities)
-* Apple Developer Command Line Tools
-* iTerm 2 (https://iterm2.com/) (Optional)
-* Oh My Zsh! (https://ohmyz.sh/) (Optional)
-* Homebrew (https://brew.sh/) (Optional)
+* [Apple Developer Command Line Tools](#apple-developer-command-line-tools--apple-git)
+* [iTerm 2](#iterm-2) (https://iterm2.com/) (Optional)
+* [Oh My Zsh!](#oh-my-zsh) (https://ohmyz.sh/) (Optional)
+* [Homebrew](#homebrew) (https://brew.sh/) (Optional)
 * Admin / sudo rights / ability to install software on your system
 
-Use the Terminal App to install the Command Line tools, then install iTerm2, then Oh My Zsh, and finally, Homebrew. Technically, Apple Git (comes with the Command Line tools) is sufficient for this course, but I use the version installed by Homebrew because it tends to be more updated. However, if you decide to stick with Apple Git, you may want to use Git Prompt to display the branch name while in a Git-managed directory - see the "Git Prompt" section for instructions for that.
+Use the Terminal App to install the Command Line tools, then install iTerm2, then Oh My Zsh, and finally, Homebrew. Technically, Apple Git (comes with the Command Line tools) is sufficient for this course, but I use the version installed by [Homebrew](#homebrew) because it tends to be more updated. However, if you decide to stick with Apple Git, you may want to use [Git Prompt](#git-prompt) to display the branch name while in a Git-managed directory - see the [Git Prompt](#git-prompt) section for instructions for that.
 
 ### Apple Developer Command-Line Tools / Apple Git
 
@@ -134,7 +134,7 @@ Both commands should display something different than before. If you still see t
 
 ## Git Prompt
 
-> __NOTE__: Only follow these instructions if opting __not__ to use *Oh My Zsh* since that project accomplishes a similar result. If so, skip down to the Git Configuration section.
+> __NOTE__: Only follow these instructions if opting __not__ to use *Oh My Zsh* since that project accomplishes a similar result. If not installing Git Prompt, skip down to the [Git Configuration](#configuration) section.
 
 Download the contents of the Git Prompt script from the official Git repository:
 

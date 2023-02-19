@@ -6,5 +6,5 @@ This page has links to resources on how to install and setup Git with use within
 
 Guides have been prepared for the following Linux distributions:
 
-* [Linux Mint](Linux-Mint.md "Linux Mint - the best Desktop distro available")
+* [Debian-family](Debian.md "Debian, Ubuntu, Linux Mint") - Debian, Ubuntu, Linux Mint
 

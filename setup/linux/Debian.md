@@ -4,8 +4,10 @@ Instructions are provided for those that prefer to do this themselves.
 
 > Note: A user with __sudo__ is required for these instructions.
 
-### Tested Versions
+### Tested Ditributions and Versions
 
+* Debian 11
+* Ubuntu 22.10
 * Linux Mint 21.1
 
 Should work with all recent versions of Linux Mint.
@@ -17,6 +19,14 @@ Let's make sure all existing packages are already updated.
 ```bash
 sudo apt update
 sudo apt upgrade
+```
+
+### Requirements
+
+Let's make sure all existing packages are already updated.
+
+```bash
+sudo apt install curl wget nano gdebi
 ```
 
 ## Git Install
@@ -148,7 +158,7 @@ Upon opening VSCode, you may want to adjust the size of the interface for better
 
 ## Conclusion
 
-These are all the tools needed for the Git Going Fast course.
+These are all the tools needed for the Git Going Fast course. If you followed this instruction guide, you can continue along starting with the Chapter 3 - 
 
 
 

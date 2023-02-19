@@ -1,59 +1,43 @@
-# Git Installation and Setup on Debian-family Distributions
+# Git Installation and Setup on RedHat-family Distributions
 
-Instructions are provided for those that prefer to do this themselves. The Debian-family includes Debian and any Linux distribution that is downstream of Debian - including Ubuntu, Linux Mint, ElementaryOS, Zorin, and PopOS. Basically, if your distribution uses _apt_ or _aptitude_ as the main package manager - you are likely using a Debian-based distribution.
+Instructions are provided for those that prefer to do this themselves. The RedHat-family includes CentOS and Fedora. Basically, if your distribution uses _yum_ or _dnf_ as the package manager, this guide should work.
 
 > Note: A user with __sudo__ is required for these instructions.
 
 ### Tested Ditributions and Versions
 
-* Debian 11
-* Ubuntu 22.10
-* Linux Mint 21.1
+* Fedore 37
+* CentOS Stream 9
 
-Should work with all recent versions of any Debian-family distributions.
+Should work with all recent versions of any RedHat-family distribution.
 
-### Update Apt
+### Update System Packages
 
 Let's make sure all existing packages are already updated.
 
 ```bash
-sudo apt update
-sudo apt upgrade
+sudo dnf update
 ```
 
 ### Requirements
 
-Let's make sure all existing packages are already updated.
+Let's make sure all the requirements are installed. In all likelihood, these packages will already be installed, but it is better to make sure before proceeding.
 
 ```bash
-sudo apt install curl wget nano gdebi
+sudo dnf install curl wget nano
 ```
-
-> Note: If you are using a distribution that uses KDE Plasma, installing _gdebi_ isn't needed.
 
 ## Git Install
 
-Pick one of the following:
+With all the requirements in place, let's install Git using our package manager.
 
-__Apt / Aptitude__:
-
-This is better for interactive terminal sessions.
+__Install via DNF__:
 
 ```bash
-sudo apt install git
+sudo dnf install git
 ```
 
-or
-
-__Apt-Get__:
-
-This is better for automation scripts.
-
-```bash
-sudo apt-get install -y git
-```
-
-Note: The __-y__ option is to auto accept at the prompt.
+Note: The __-y__ option is to auto accept at the prompt automatically.
 
 ## Git Prompt
 
@@ -64,7 +48,7 @@ cd ~
 curl -o .git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 ```
 
-Append the contents of this into your __.bashrc__ file (Linux Mint uses Bash as the default user shell):
+Append the contents of this into your __.bashrc__ file (assuming Bash is the default user shell):
 
 ```bash
 if [ -f ~/.git-prompt.sh ]; then
@@ -140,15 +124,26 @@ git config --global init.defaultBranch main
 
 This course uses [Visual Studio Code][vscode] as the primary code editor since it is cross-platform and available on all operating systems supported by this course.
 
-Go to the [Visual Studio Code][vscode] website. The web page should detect you are browsing on a Linux platform and offer you the choice between an RPM (RedHat family) or DEB package (Debian family). Since we are using a distribution that is part of the Debian family, choose to download the Deb package.
+Go to the [Visual Studio Code][vscode] website. The web page should detect you are browsing on a Linux platform and offer you the choice between an RPM (RedHat family) or DEB package (Debian family). Since I'm part of the RedHat family, I'll choose RPM. Instead of being offered the RPM file directly, I'm given a set of instructions to follow to add the VSCode Yum repository to my system.
 
-Once the Visual Studio Code DEB package is downloaded, open or Show in Folder. With the folder open, right-click on the package and choose to install with the Package installer - which should be the defualt action. When that opens, click the green "Install Package" button.
+First we need to import Microsoft's key into our RPM system and then create a YUM repository configuration:
 
-Package Installer will ask you to authenticate - just provide your user's password - this will require __sudo__ access.
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
-Once the package is installed, close the Package Installer. At this point Visual Studio Code should be installed.
+```
 
-At this point, I recommend adding it as a favorite, to the panel and possibly to the Desktop for easy access. I also recommend opening up your terminal application and confirming the `code` command is available.
+Next, we need to refresh the package manager's database and then install VSCode using dnf or yum:
+
+```bash
+dnf check-updates
+sudo dnf install code
+```
+
+You will be prompted to confirm the installation and then Visual Studio Code will be installed.
+
+At this point, I recommend adding it as a favorite. I also recommend opening up your terminal application and confirming the `code` command is available.
 
 ```bash
 which code
@@ -160,7 +155,7 @@ Upon opening VSCode, you may want to adjust the size of the interface for better
 
 ## Conclusion
 
-These are all the tools needed for the Git Going Fast course. If you followed this instruction guide, you can continue along starting with the Chapter 3 - 
+These are all the tools needed for the Git Going Fast course. If you followed this instruction guide, you can continue along starting with the next chapter.
 
 
 

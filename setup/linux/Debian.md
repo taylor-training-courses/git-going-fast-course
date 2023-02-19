@@ -2,6 +2,33 @@
 
 Instructions are provided for those that prefer to do this themselves.
 
+> Note: A user with __sudo__ is required for these instructions.
+
+### Tested Ditributions and Versions
+
+* Debian 11
+* Ubuntu 22.10
+* Linux Mint 21.1
+
+Should work with all recent versions of Linux Mint.
+
+### Update Apt
+
+Let's make sure all existing packages are already updated.
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+### Requirements
+
+Let's make sure all existing packages are already updated.
+
+```bash
+sudo apt install curl wget nano gdebi
+```
+
 ## Git Install
 
 Pick one of the following:
@@ -48,7 +75,7 @@ fi
 
 Make sure no lines wrap. If you use a different shell, make adjustments accordingly.
 
-## Configration
+## Configuration
 
 Git requires a bit of configuration before allowing us to do very much with it.
 
@@ -76,15 +103,6 @@ Simple terminal-based editor that comes Ubuntu/Linux Mint. Great option if prefe
 git config --global core.editor nano
 ```
 
-__Atom__:
-
-Personal favorite, but now deprecated as it is being abandoned by Microsoft in favor of VSCode.
-
-```bash
-# Atom as default editor with Git
-git config --global core.editor "atom --wait"
-```
-
 __Visual Studio Code__:
 
 Used with Git Going Fast course.
@@ -107,7 +125,7 @@ git config --global push.default simple
 
 ### Default Branch Name
 
-Git still uses "master" as the default branch name if one isn't provided, but (nearly) all Git hosting providers have adopted "main" as the default - including GitHub. I recommend changing the default locally to "main" as the default is likely to change anyway.
+Git still uses "master" as the default branch name if one isn't provided, but (nearly) all Git hosting providers have adopted "main" as the default - including GitHub. I recommend changing the default locally to "main" as the default is likely to change soon anyway.
 
 __Main Default Branch__:
 
@@ -115,3 +133,33 @@ __Main Default Branch__:
 # Set default branch
 git config --global init.defaultBranch main
 ```
+
+## Visual Studio Code
+
+This course uses [Visual Studio Code][vscode] as the primary code editor since it is cross-platform and available on all operating systems supported by this course.
+
+Go to the [Visual Studio Code][vscode] website. The web page should detect you are browsing on a Linux platform and offer you the choice between an RPM (RedHat family) or DEB package (Debian family). Since Linux Mint is part of the Debian family, choose to download the Deb package.
+
+Once the Visual Studio Code DEB package is downloaded, open or Show in Folder. With the folder open, right-click on the package and choose to install with the Package installer - which should be the defualt action. When that opens, click the green "Install Package" button.
+
+Package Installer will ask you to authenticate - just provide your user's password - this will require __sudo__ access.
+
+Once the package is installed, close the Package Installer. At this point Visual Studio Code should be installed.
+
+At this point, I recommend adding it as a favorite, to the panel and possibly to the Desktop for easy access. I also recommend opening up your terminal application and confirming the `code` command is available.
+
+```bash
+which code
+code --version
+code .
+```
+
+Upon opening VSCode, you may want to adjust the size of the interface for better readability - I'm doing to do this so code shows up better throughout the course.
+
+## Conclusion
+
+These are all the tools needed for the Git Going Fast course. If you followed this instruction guide, you can continue along starting with the Chapter 3 - 
+
+
+
+[vscode]: https://code.visualstudio.com/ "A code editor from Microsoft that doesn't suck"

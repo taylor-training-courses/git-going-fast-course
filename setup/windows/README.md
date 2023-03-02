@@ -7,11 +7,11 @@ Instructions are provided for those that prefer to do this themselves. This guid
 ### Tested Versions
 
 * Windows 10
-    * Windows 10 Home
-    * Windows 10 Pro
+  * Windows 10 Home
+  * Windows 10 Pro
 * Windows 11
-    * Windows 11 Home
-    * Windows 11 Pro
+  * Windows 11 Home
+  * Windows 11 Pro
 
 Should work without issue on Education and Enterprise editions, including "N" or other variants.
 
@@ -36,7 +36,7 @@ This course uses [Visual Studio Code][vscode] as the primary code editor since i
 
 ### Installation
 
-Once the installer is downloaded, run the installer. 
+Once the installer is downloaded, run the installer.
 
 Setup > Additional Tasks:
 
@@ -76,7 +76,7 @@ With all the requirements in place, let's install Git from the official [Git Web
 
 ### Installation
 
-Once the installer is downloaded, run the installer. 
+Once the installer is downloaded, run the installer.
 
 Setup > Select Components:
 
@@ -115,7 +115,6 @@ If, during the installation process, you checked the option to integrate Git Bas
 > Note: Windows 10 requires Windows Terminal be installed (free) via the Microsoft Store first.
 
 > Note: While Windows 11 comes with Windows Terminal. It still needs to be updated via the Microsoft Store before installing Git.
-
 
 ### Git Prompt
 
@@ -234,12 +233,9 @@ __Main Default Branch__:
 git config --global init.defaultBranch main
 ```
 
-
 ## Conclusion
 
 These are all the tools needed for the Git Going Fast course. If you followed this instruction guide, you can continue along starting with the next chapter.
-
-
 
 [vscode]: https://code.visualstudio.com/ "A code editor from Microsoft that doesn't suck"
 [git]: https://git-scm.com/ "Git SCM website"

@@ -6,8 +6,8 @@ Instructions are provided for those that prefer to do this themselves. The RedHa
 
 ### Tested Ditributions and Versions
 
-* Fedore 37
-* CentOS Stream 9
+* Fedore 37, 42
+* CentOS Stream 9, 10
 
 Should work with all recent versions of any RedHat-family distribution.
 
@@ -118,6 +118,17 @@ __Main Default Branch__:
 ```bash
 # Set default branch
 git config --global init.defaultBranch main
+```
+
+### Remote Branch
+
+Git does not automatically create a cooresponding remote "upstream" tracking branch upon first push.
+
+__Remote Auto Setup__:
+
+```bash
+# automatically setup remote branch upon push
+git config --global push.autoSetupRemote true
 ```
 
 ## Visual Studio Code

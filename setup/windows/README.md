@@ -129,10 +129,10 @@ cd ~
 First, we need to ensure Git Bash is ready. We need to create two startup scripts:
 
 ```bash
-code .bashrc
+code .bash_profile
 ```
 
-Contents of __.bashrc__:
+Contents of __.bash_profile__:
 
 ```bash
 if [ -f ~/.bashrc ]; then
@@ -143,10 +143,10 @@ fi
 It is possible this file already exists. Just confirm the contents looks like above. Save and close the file.
 
 ```bash
-code .bash_profile
+code .bashrc
 ```
 
-Contents of __.bash_profile__:
+Contents of __.bashrc__ (append):
 
 ```bash
 export LS_COLORS="di=36;40:ln=32;40:so=32:pi=33:ex=31;40:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=1;32;40:ow=32;40"
